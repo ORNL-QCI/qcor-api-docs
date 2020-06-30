@@ -87,14 +87,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classqcor_1_1_q_a_o_a-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">qcor::QAOA Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a846f9e44948476c1d8303383d321d966"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a846f9e44948476c1d8303383d321d966"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>QAOAResultType</b> = std::pair&lt; double, std::vector&lt; double &gt;&gt;</td></tr>
+<tr class="separator:a846f9e44948476c1d8303383d321d966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4f19373af4b543ebdc7c39c62ffc364"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4f19373af4b543ebdc7c39c62ffc364"></a>
@@ -103,27 +112,102 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a394c4a1a8274fae7529bab22b42ae469"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a394c4a1a8274fae7529bab22b42ae469"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>QAOA</b> (PauliOperator &amp;obs, PauliOperator &amp;ref_ham, const std::size_t _n_steps)</td></tr>
 <tr class="separator:a394c4a1a8274fae7529bab22b42ae469"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ccacfb64c94944db346c26a3200751d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ccacfb64c94944db346c26a3200751d"></a>
-std::pair&lt; double, std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> ()</td></tr>
-<tr class="separator:a0ccacfb64c94944db346c26a3200751d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9315e78d93b6d6d2cff4d1064dd1d944"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9315e78d93b6d6d2cff4d1064dd1d944"></a>
-std::pair&lt; double, std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> (std::shared_ptr&lt; Optimizer &gt; optimizer)</td></tr>
-<tr class="separator:a9315e78d93b6d6d2cff4d1064dd1d944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a471e94e743eff730827ade2b77597c9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a471e94e743eff730827ade2b77597c9a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>QAOA</b> (PauliOperator &amp;obs, GradientEvaluator &amp;geval, const std::size_t _n_steps)</td></tr>
+<tr class="separator:a471e94e743eff730827ade2b77597c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6222b8b4424f21b8db7605795163f14f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6222b8b4424f21b8db7605795163f14f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>QAOA</b> (PauliOperator &amp;obs, PauliOperator &amp;ref_ham, GradientEvaluator &amp;geval, const std::size_t _n_steps)</td></tr>
+<tr class="separator:a6222b8b4424f21b8db7605795163f14f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ccf22488df73a5a4fc1cc59ec5141d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32ccf22488df73a5a4fc1cc59ec5141d"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>n_gamma</b> ()</td></tr>
+<tr class="separator:a32ccf22488df73a5a4fc1cc59ec5141d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9102636ba6ab499e7969402887ed6c03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9102636ba6ab499e7969402887ed6c03"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>n_beta</b> ()</td></tr>
+<tr class="separator:a9102636ba6ab499e7969402887ed6c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9daa1e20614e6fb9b99acf89657f20c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9daa1e20614e6fb9b99acf89657f20c3"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>n_steps</b> ()</td></tr>
+<tr class="separator:a9daa1e20614e6fb9b99acf89657f20c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96efbab0c63ce0e5ac8ac31adc6eeb25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96efbab0c63ce0e5ac8ac31adc6eeb25"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>n_parameters</b> ()</td></tr>
+<tr class="separator:a96efbab0c63ce0e5ac8ac31adc6eeb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbe7ef3017f9057d620301c968d82ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cbe7ef3017f9057d620301c968d82ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_parameter_shift_scale_factor</b> (const double scale)</td></tr>
+<tr class="separator:a0cbe7ef3017f9057d620301c968d82ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13a5b639eb562422ba47fd3ab0bb0bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af13a5b639eb562422ba47fd3ab0bb0bf"></a>
+QAOAResultType&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> (const std::vector&lt; double &gt; initial_parameters={})</td></tr>
+<tr class="separator:af13a5b639eb562422ba47fd3ab0bb0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935b6aaf9fc82e93857f957a08c76c95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a935b6aaf9fc82e93857f957a08c76c95"></a>
+QAOAResultType&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> (std::shared_ptr&lt; Optimizer &gt; optimizer, const std::vector&lt; double &gt; initial_parameters={})</td></tr>
+<tr class="separator:a935b6aaf9fc82e93857f957a08c76c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb69422079710d5464141f361a6fdce0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb69422079710d5464141f361a6fdce0"></a>
+Handle&#160;</td><td class="memItemRight" valign="bottom"><b>execute_async</b> (std::shared_ptr&lt; Optimizer &gt; optimizer, const std::vector&lt; double &gt; initial_parameters={})</td></tr>
+<tr class="separator:adb69422079710d5464141f361a6fdce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1f2b40b9b7896fb33342f06e4cfde5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f1f2b40b9b7896fb33342f06e4cfde5"></a>
+QAOAResultType&#160;</td><td class="memItemRight" valign="bottom"><b>sync</b> (Handle &amp;h)</td></tr>
+<tr class="separator:a3f1f2b40b9b7896fb33342f06e4cfde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a11d343f085e351d6de542aea9fe79b32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11d343f085e351d6de542aea9fe79b32"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initial_compile_qaoa_code</b> ()</td></tr>
+<tr class="separator:a11d343f085e351d6de542aea9fe79b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31f3b96bb535729169da4286163eb5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad31f3b96bb535729169da4286163eb5a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>error</b> (const std::string &amp;message)</td></tr>
+<tr class="separator:ad31f3b96bb535729169da4286163eb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a5115edd8c91d2112ce9e1297ff21ac75"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5115edd8c91d2112ce9e1297ff21ac75"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>nSteps</b> = 1</td></tr>
 <tr class="separator:a5115edd8c91d2112ce9e1297ff21ac75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d77c8feca8994e62672bdb9f84ae31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43d77c8feca8994e62672bdb9f84ae31"></a>
+GradientEvaluator&#160;</td><td class="memItemRight" valign="bottom"><b>grad_eval</b></td></tr>
+<tr class="separator:a43d77c8feca8994e62672bdb9f84ae31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad031f5f2237e039a7d3f58eca19a8e18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad031f5f2237e039a7d3f58eca19a8e18"></a>
 PauliOperator &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>cost</b></td></tr>
 <tr class="separator:ad031f5f2237e039a7d3f58eca19a8e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0dfb767f1f1402389dd7a29c655bacb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0dfb767f1f1402389dd7a29c655bacb"></a>
 PauliOperator&#160;</td><td class="memItemRight" valign="bottom"><b>ref</b></td></tr>
 <tr class="separator:ad0dfb767f1f1402389dd7a29c655bacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99cf582fb2f7193a46c8350e3bb2a331"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99cf582fb2f7193a46c8350e3bb2a331"></a>
+qreg&#160;</td><td class="memItemRight" valign="bottom"><b>q</b></td></tr>
+<tr class="separator:a99cf582fb2f7193a46c8350e3bb2a331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e8f9d4577d1278cd6dd44f41f0ce5b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e8f9d4577d1278cd6dd44f41f0ce5b5"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>ps_scale_factor</b> = 1.0</td></tr>
+<tr class="separator:a2e8f9d4577d1278cd6dd44f41f0ce5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae9bc136396d0bb878b8b5b4bd7ccbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acae9bc136396d0bb878b8b5b4bd7ccbe"></a>
+std::shared_ptr&lt; CompositeInstruction &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>qaoa_circuit</b></td></tr>
+<tr class="separator:acae9bc136396d0bb878b8b5b4bd7ccbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:ad524a9815fd96ec68373b4c4c6b3643b"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>qaoa_xasm_code</b></td></tr>
+<tr class="separator:ad524a9815fd96ec68373b4c4c6b3643b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ad524a9815fd96ec68373b4c4c6b3643b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string qcor::QAOA::qaoa_xasm_code</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      R<span class="stringliteral">&quot;#(__qpu__ void qaoa_ansatz(qreg q, int n, std::vector&lt;double&gt; betas, std::vector&lt;double&gt; gammas, qcor::PauliOperator&amp; costHamiltonian, qcor::PauliOperator&amp; refHamiltonian) {</span></div><div class="line"><span class="stringliteral">  qaoa(q, n, betas, gammas, costHamiltonian, refHamiltonian);</span></div><div class="line"><span class="stringliteral">})#&quot;</span></div></div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/cades/dev/qcor/lib/hybrid/<a class="el" href="qcor__hybrid_8hpp_source.html">qcor_hybrid.hpp</a></li>
+<li>/home/cades/dev/qcor/lib/hybrid/qcor_hybrid.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

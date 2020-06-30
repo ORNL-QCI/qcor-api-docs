@@ -89,7 +89,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classqcor_1_1_v_q_e-members.html">List of all members</a>  </div>
@@ -97,15 +96,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">qcor::VQE&lt; QuantumKernel &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for qcor::VQE&lt; QuantumKernel &gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classqcor_1_1_v_q_e.png" usemap="#qcor::VQE_3C_20QuantumKernel_20_3E_map" alt=""/>
-  <map id="qcor::VQE_3C_20QuantumKernel_20_3E_map" name="qcor::VQE&lt; QuantumKernel &gt;_map">
-<area href="classqcor_1_1_objective_function.html" alt="qcor::ObjectiveFunction" shape="rect" coords="0,56,181,80"/>
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -118,12 +108,6 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>VQEEnergiesAndParame
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a713461aed92c66e64309593539c39b80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a713461aed92c66e64309593539c39b80"></a>
-const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const override</td></tr>
-<tr class="separator:a713461aed92c66e64309593539c39b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ab90298e1ddbef670f6c75d8c339ddc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ab90298e1ddbef670f6c75d8c339ddc"></a>
-const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> () const override</td></tr>
-<tr class="separator:a4ab90298e1ddbef670f6c75d8c339ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6c6ffc7ea73fe0d3e3c5300382e7079"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6c6ffc7ea73fe0d3e3c5300382e7079"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>VQE</b> (QuantumKernel &amp;kernel, Observable &amp;obs)</td></tr>
 <tr class="separator:ad6c6ffc7ea73fe0d3e3c5300382e7079"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,38 +147,9 @@ std::vector&lt; std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRig
 <tr class="memitem:a82f1ae4040139198452e8d33a5976d1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82f1ae4040139198452e8d33a5976d1f"></a>
 VQEEnergiesAndParameters&#160;</td><td class="memItemRight" valign="bottom"><b>get_unique_energies</b> ()</td></tr>
 <tr class="separator:a82f1ae4040139198452e8d33a5976d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classqcor_1_1_objective_function"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classqcor_1_1_objective_function')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classqcor_1_1_objective_function.html">qcor::ObjectiveFunction</a></td></tr>
-<tr class="memitem:aaf2a0f99f7b7087f883e919b5fc28617 inherit pub_methods_classqcor_1_1_objective_function"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf2a0f99f7b7087f883e919b5fc28617"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> (Observable *obs, std::shared_ptr&lt; CompositeInstruction &gt; qk)</td></tr>
-<tr class="separator:aaf2a0f99f7b7087f883e919b5fc28617 inherit pub_methods_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13bdbff4c5caa23a8c9bc8ddc9d6e227 inherit pub_methods_classqcor_1_1_objective_function"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13bdbff4c5caa23a8c9bc8ddc9d6e227"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> (Observable *obs, void *qk)</td></tr>
-<tr class="separator:a13bdbff4c5caa23a8c9bc8ddc9d6e227 inherit pub_methods_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e49b14fc1e6870ca575c384eebe310b inherit pub_methods_classqcor_1_1_objective_function"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e49b14fc1e6870ca575c384eebe310b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_options</b> (HeterogeneousMap &amp;opts)</td></tr>
-<tr class="separator:a2e49b14fc1e6870ca575c384eebe310b inherit pub_methods_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe5576ddee684ab546a8bcd363e384dd inherit pub_methods_classqcor_1_1_objective_function"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe5576ddee684ab546a8bcd363e384dd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_qreg</b> (xacc::internal_compiler::qreg &amp;q)</td></tr>
-<tr class="separator:abe5576ddee684ab546a8bcd363e384dd inherit pub_methods_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c90a5500f8ee4171d8bad7e623a1e1d inherit pub_methods_classqcor_1_1_objective_function"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c90a5500f8ee4171d8bad7e623a1e1d"></a>
-xacc::internal_compiler::qreg&#160;</td><td class="memItemRight" valign="bottom"><b>get_qreg</b> ()</td></tr>
-<tr class="separator:a2c90a5500f8ee4171d8bad7e623a1e1d inherit pub_methods_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa16454d36f7b94b5d7e75a40beccd7f7 inherit pub_methods_classqcor_1_1_objective_function"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa16454d36f7b94b5d7e75a40beccd7f7"></a>
-template&lt;typename... ArgumentTypes&gt; </td></tr>
-<tr class="memitem:aa16454d36f7b94b5d7e75a40beccd7f7 inherit pub_methods_classqcor_1_1_objective_function"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (ArgumentTypes...args)</td></tr>
-<tr class="separator:aa16454d36f7b94b5d7e75a40beccd7f7 inherit pub_methods_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a14882b09c87bebdf2f3831dc944c5471"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14882b09c87bebdf2f3831dc944c5471"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> () override</td></tr>
-<tr class="separator:a14882b09c87bebdf2f3831dc944c5471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ad97c3921d559a63a312a79a12ce1fc88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad97c3921d559a63a312a79a12ce1fc88"></a>
-std::shared_ptr&lt; xacc::Algorithm &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vqe</b></td></tr>
-<tr class="separator:ad97c3921d559a63a312a79a12ce1fc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75699b5091ceda6c776d8bbafba4a826"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75699b5091ceda6c776d8bbafba4a826"></a>
 QuantumKernel &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ansatz</b></td></tr>
 <tr class="separator:a75699b5091ceda6c776d8bbafba4a826"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,25 +168,6 @@ GradientEvaluator&#160;</td><td class="memItemRight" valign="bottom"><b>grad_eva
 <tr class="memitem:ac68a05c26aee06ea6594e5ad1445c095"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac68a05c26aee06ea6594e5ad1445c095"></a>
 std::any&#160;</td><td class="memItemRight" valign="bottom"><b>translation_functor</b></td></tr>
 <tr class="separator:ac68a05c26aee06ea6594e5ad1445c095"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classqcor_1_1_objective_function"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classqcor_1_1_objective_function')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classqcor_1_1_objective_function.html">qcor::ObjectiveFunction</a></td></tr>
-<tr class="memitem:aa08a96bed2ddc8d28973240f83da0804 inherit pro_attribs_classqcor_1_1_objective_function"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa08a96bed2ddc8d28973240f83da0804"></a>
-Observable *&#160;</td><td class="memItemRight" valign="bottom"><b>observable</b></td></tr>
-<tr class="separator:aa08a96bed2ddc8d28973240f83da0804 inherit pro_attribs_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54f1d41f7c65a40965abd759df451df2 inherit pro_attribs_classqcor_1_1_objective_function"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54f1d41f7c65a40965abd759df451df2"></a>
-std::shared_ptr&lt; CompositeInstruction &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kernel</b></td></tr>
-<tr class="separator:a54f1d41f7c65a40965abd759df451df2 inherit pro_attribs_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59a88c523f7815d16fd604adc3aaa035 inherit pro_attribs_classqcor_1_1_objective_function"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59a88c523f7815d16fd604adc3aaa035"></a>
-xacc::internal_compiler::qreg&#160;</td><td class="memItemRight" valign="bottom"><b>qreg</b></td></tr>
-<tr class="separator:a59a88c523f7815d16fd604adc3aaa035 inherit pro_attribs_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7e5ba68fedb31778f9a421926d736ae inherit pro_attribs_classqcor_1_1_objective_function"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7e5ba68fedb31778f9a421926d736ae"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>kernel_is_xacc_composite</b> = false</td></tr>
-<tr class="separator:ac7e5ba68fedb31778f9a421926d736ae inherit pro_attribs_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaccbd249e7cea0291d447d04d87d4ee inherit pro_attribs_classqcor_1_1_objective_function"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeaccbd249e7cea0291d447d04d87d4ee"></a>
-HeterogeneousMap&#160;</td><td class="memItemRight" valign="bottom"><b>options</b></td></tr>
-<tr class="separator:aeaccbd249e7cea0291d447d04d87d4ee inherit pro_attribs_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a22af62c5bb097be3c73a65fc404dc0 inherit pro_attribs_classqcor_1_1_objective_function"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a22af62c5bb097be3c73a65fc404dc0"></a>
-std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>current_iterate_parameters</b></td></tr>
-<tr class="separator:a9a22af62c5bb097be3c73a65fc404dc0 inherit pro_attribs_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -244,16 +180,8 @@ static const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>O
 <tr class="memitem:a19bdab4f7f9dfe2450a641907a89a3c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19bdab4f7f9dfe2450a641907a89a3c2"></a>
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_OPTIMIZER</b> = &quot;nlopt&quot;</td></tr>
 <tr class="separator:a19bdab4f7f9dfe2450a641907a89a3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_attribs_classqcor_1_1_objective_function"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classqcor_1_1_objective_function')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classqcor_1_1_objective_function.html">qcor::ObjectiveFunction</a></td></tr>
-<tr class="memitem:aa3c5fd38698650961d76b1194de172ee inherit pub_attribs_classqcor_1_1_objective_function"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3c5fd38698650961d76b1194de172ee"></a>
-std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>current_gradient</b></td></tr>
-<tr class="separator:aa3c5fd38698650961d76b1194de172ee inherit pub_attribs_classqcor_1_1_objective_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/cades/dev/qcor/runtime/objectives/vqe/vqe.cpp</li>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/cades/dev/qcor/lib/hybrid/<a class="el" href="qcor__hybrid_8hpp_source.html">qcor_hybrid.hpp</a></li>
 </ul>
 </div><!-- contents -->
