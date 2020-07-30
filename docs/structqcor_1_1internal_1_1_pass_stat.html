@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>QCOR: qcor::Controlled Class Reference</title>
+<title>QCOR: qcor::internal::PassStat Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,27 +82,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>qcor</b></li><li class="navelem"><a class="el" href="classqcor_1_1_controlled.html">Controlled</a></li>  </ul>
+<li class="navelem"><b>qcor</b></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="structqcor_1_1internal_1_1_pass_stat.html">PassStat</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="classqcor_1_1_controlled-members.html">List of all members</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structqcor_1_1internal_1_1_pass_stat-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">qcor::Controlled Class Reference</div>  </div>
+<div class="title">qcor::internal::PassStat Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4c346931be02772edd2ba8c57bfd52d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c346931be02772edd2ba8c57bfd52d2"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>toString</b> (bool shortForm=true) const </td></tr>
+<tr class="separator:a4c346931be02772edd2ba8c57bfd52d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a33bda0734a034b49baa11b1c048c2d72"><td class="memTemplParams" colspan="2"><a class="anchor" id="a33bda0734a034b49baa11b1c048c2d72"></a>
-template&lt;typename FunctorType , typename... ArgumentTypes&gt; </td></tr>
-<tr class="memitem:a33bda0734a034b49baa11b1c048c2d72"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Apply</b> (int ctrlIdx, FunctorType functor, ArgumentTypes...args)</td></tr>
-<tr class="separator:a33bda0734a034b49baa11b1c048c2d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6628876932bd0408a490bdbef14d935f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6628876932bd0408a490bdbef14d935f"></a>
+static std::unordered_map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>countGates</b> (const std::shared_ptr&lt; xacc::CompositeInstruction &gt; &amp;program)</td></tr>
+<tr class="separator:a6628876932bd0408a490bdbef14d935f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a7a2975d02d0f6a463b3591a03893ef3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a2975d02d0f6a463b3591a03893ef3b"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>passName</b></td></tr>
+<tr class="separator:a7a2975d02d0f6a463b3591a03893ef3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ba9f87ff982de3d28bbfb3fb471b61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76ba9f87ff982de3d28bbfb3fb471b61"></a>
+std::unordered_map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>gateCountBefore</b></td></tr>
+<tr class="separator:a76ba9f87ff982de3d28bbfb3fb471b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973290ca1a7b917aaf1e17ee786308f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a973290ca1a7b917aaf1e17ee786308f2"></a>
+std::unordered_map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>gateCountAfter</b></td></tr>
+<tr class="separator:a973290ca1a7b917aaf1e17ee786308f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2d5c6812cbc2055f2888d6f8cb0fef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff2d5c6812cbc2055f2888d6f8cb0fef"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>wallTimeMs</b></td></tr>
+<tr class="separator:aff2d5c6812cbc2055f2888d6f8cb0fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/cades/dev/qcor/runtime/<a class="el" href="qcor_8hpp_source.html">qcor.hpp</a></li>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>/home/cades/dev/qcor/runtime/qrt/<a class="el" href="pass__manager_8hpp_source.html">pass_manager.hpp</a></li>
+<li>/home/cades/dev/qcor/runtime/qrt/pass_manager.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

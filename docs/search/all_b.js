@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vqe',['VQE',['../classqcor_1_1_v_q_e.html',1,'qcor']]],
-  ['vqeobjective',['VQEObjective',['../classqcor_1_1_v_q_e_objective.html',1,'qcor']]]
+  ['tokencollector',['TokenCollector',['../classqcor_1_1_token_collector.html',1,'qcor']]],
+  ['translationfunctorautogenerator',['TranslationFunctorAutoGenerator',['../structqcor_1_1____internal_____1_1_translation_functor_auto_generator.html',1,'qcor::__internal__']]]
 ];

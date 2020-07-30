@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>QCOR: qcor::VQE&lt; QuantumKernel &gt; Class Template Reference</title>
+<title>QCOR: qcor::VQE&lt; KernelArgs &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,93 +93,89 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classqcor_1_1_v_q_e-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">qcor::VQE&lt; QuantumKernel &gt; Class Template Reference</div>  </div>
+<div class="title">qcor::VQE&lt; KernelArgs &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ace8a8f2950d6b553b9ee2df3d55dcc24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace8a8f2950d6b553b9ee2df3d55dcc24"></a>
+<tr class="memitem:a31baad19a3ffb2d9dfd709af8ed19390"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31baad19a3ffb2d9dfd709af8ed19390"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>VQEResultType</b> = std::pair&lt; double, std::vector&lt; double &gt;&gt;</td></tr>
-<tr class="separator:ace8a8f2950d6b553b9ee2df3d55dcc24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6314b98322fc1df36c2c0a24354e6bcb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6314b98322fc1df36c2c0a24354e6bcb"></a>
+<tr class="separator:a31baad19a3ffb2d9dfd709af8ed19390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e624c66f6936ac7218529e1b2203a87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e624c66f6936ac7218529e1b2203a87"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>VQEEnergiesAndParameters</b> = std::vector&lt; std::pair&lt; double, std::vector&lt; double &gt;&gt;&gt;</td></tr>
-<tr class="separator:a6314b98322fc1df36c2c0a24354e6bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a0e624c66f6936ac7218529e1b2203a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6c6ffc7ea73fe0d3e3c5300382e7079"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6c6ffc7ea73fe0d3e3c5300382e7079"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>VQE</b> (QuantumKernel &amp;kernel, Observable &amp;obs)</td></tr>
-<tr class="separator:ad6c6ffc7ea73fe0d3e3c5300382e7079"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61326cdfa703b432f3662ed1b25eb9e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61326cdfa703b432f3662ed1b25eb9e9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>VQE</b> (QuantumKernel &amp;kernel, Observable &amp;obs, GradientEvaluator &amp;geval)</td></tr>
-<tr class="separator:a61326cdfa703b432f3662ed1b25eb9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cec348ddac4280ac15330f3dfc221ae"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6cec348ddac4280ac15330f3dfc221ae"></a>
+<tr class="memitem:a5b28e21103ede45c3e5816ea41e24ca2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b28e21103ede45c3e5816ea41e24ca2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VQE</b> (void(*quantum_kernel_functor)(std::shared_ptr&lt; CompositeInstruction &gt;, qreg, KernelArgs...), Observable &amp;obs)</td></tr>
+<tr class="separator:a5b28e21103ede45c3e5816ea41e24ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876bdda06a5d641aa50721dad466fbcf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a876bdda06a5d641aa50721dad466fbcf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VQE</b> (void(*quantum_kernel_functor)(std::shared_ptr&lt; CompositeInstruction &gt;, qreg, KernelArgs...), Observable &amp;obs, GradientEvaluator &amp;geval)</td></tr>
+<tr class="separator:a876bdda06a5d641aa50721dad466fbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e9f019a85cf40bec0b779a0390a2a29"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1e9f019a85cf40bec0b779a0390a2a29"></a>
 template&lt;typename TranslationFunctorT &gt; </td></tr>
-<tr class="memitem:a6cec348ddac4280ac15330f3dfc221ae"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>VQE</b> (QuantumKernel &amp;kernel, Observable &amp;obs, TranslationFunctorT &amp;&amp;tfunc)</td></tr>
-<tr class="separator:a6cec348ddac4280ac15330f3dfc221ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2c2ad783b1594f9e2f5261bc58745bb"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa2c2ad783b1594f9e2f5261bc58745bb"></a>
+<tr class="memitem:a1e9f019a85cf40bec0b779a0390a2a29"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>VQE</b> (void(*quantum_kernel_functor)(std::shared_ptr&lt; CompositeInstruction &gt;, qreg, KernelArgs...), Observable &amp;obs, TranslationFunctorT &amp;&amp;tfunc)</td></tr>
+<tr class="separator:a1e9f019a85cf40bec0b779a0390a2a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e6869b37e3dbd7dfcf2c41160e0a9b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a72e6869b37e3dbd7dfcf2c41160e0a9b"></a>
 template&lt;typename TranslationFunctorT &gt; </td></tr>
-<tr class="memitem:aa2c2ad783b1594f9e2f5261bc58745bb"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>VQE</b> (QuantumKernel &amp;kernel, Observable &amp;obs, GradientEvaluator &amp;geval, TranslationFunctorT &amp;&amp;tfunc)</td></tr>
-<tr class="separator:aa2c2ad783b1594f9e2f5261bc58745bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cecdf26a9bc57a4072d339bc5d929a6"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9cecdf26a9bc57a4072d339bc5d929a6"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a9cecdf26a9bc57a4072d339bc5d929a6"><td class="memTemplItemLeft" align="right" valign="top">VQEResultType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>execute</b> (Args...initial_params)</td></tr>
-<tr class="separator:a9cecdf26a9bc57a4072d339bc5d929a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ee1f9ea68b00071adf9a05c929948e6"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7ee1f9ea68b00071adf9a05c929948e6"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a7ee1f9ea68b00071adf9a05c929948e6"><td class="memTemplItemLeft" align="right" valign="top">Handle&#160;</td><td class="memTemplItemRight" valign="bottom"><b>execute_async</b> (Args...initial_params)</td></tr>
-<tr class="separator:a7ee1f9ea68b00071adf9a05c929948e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a755c576159b53c997e6fd867ba2fad48"><td class="memTemplParams" colspan="2"><a class="anchor" id="a755c576159b53c997e6fd867ba2fad48"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a755c576159b53c997e6fd867ba2fad48"><td class="memTemplItemLeft" align="right" valign="top">VQEResultType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>execute</b> (std::shared_ptr&lt; Optimizer &gt; optimizer, Args...initial_params)</td></tr>
-<tr class="separator:a755c576159b53c997e6fd867ba2fad48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ca7f7f9b1251caaf42bf0977f030fda"><td class="memTemplParams" colspan="2"><a class="anchor" id="a4ca7f7f9b1251caaf42bf0977f030fda"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a4ca7f7f9b1251caaf42bf0977f030fda"><td class="memTemplItemLeft" align="right" valign="top">Handle&#160;</td><td class="memTemplItemRight" valign="bottom"><b>execute_async</b> (std::shared_ptr&lt; Optimizer &gt; optimizer, Args...initial_params)</td></tr>
-<tr class="separator:a4ca7f7f9b1251caaf42bf0977f030fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe885151c876ef387b7bb0d520a2efc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe885151c876ef387b7bb0d520a2efc1"></a>
+<tr class="memitem:a72e6869b37e3dbd7dfcf2c41160e0a9b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>VQE</b> (void(*quantum_kernel_functor)(std::shared_ptr&lt; CompositeInstruction &gt;, qreg, KernelArgs...), Observable &amp;obs, GradientEvaluator &amp;geval, TranslationFunctorT &amp;&amp;tfunc)</td></tr>
+<tr class="separator:a72e6869b37e3dbd7dfcf2c41160e0a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba67e13849c4c04013146ada854a5a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ba67e13849c4c04013146ada854a5a8"></a>
+VQEResultType&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> (KernelArgs...initial_params)</td></tr>
+<tr class="separator:a6ba67e13849c4c04013146ada854a5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9996ef88d1ab67e21de83663c97614ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9996ef88d1ab67e21de83663c97614ff"></a>
+Handle&#160;</td><td class="memItemRight" valign="bottom"><b>execute_async</b> (KernelArgs...initial_params)</td></tr>
+<tr class="separator:a9996ef88d1ab67e21de83663c97614ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a289b468ffd1b08eb38e47881f19d31e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a289b468ffd1b08eb38e47881f19d31e9"></a>
+VQEResultType&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> (std::shared_ptr&lt; Optimizer &gt; optimizer, KernelArgs...initial_params)</td></tr>
+<tr class="separator:a289b468ffd1b08eb38e47881f19d31e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cdb0b90dd7b8394124942ab584aa3b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cdb0b90dd7b8394124942ab584aa3b2"></a>
+Handle&#160;</td><td class="memItemRight" valign="bottom"><b>execute_async</b> (std::shared_ptr&lt; Optimizer &gt; optimizer, KernelArgs...initial_params)</td></tr>
+<tr class="separator:a3cdb0b90dd7b8394124942ab584aa3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8705e0e979e1516161c2ad84fad4df0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8705e0e979e1516161c2ad84fad4df0d"></a>
 VQEResultType&#160;</td><td class="memItemRight" valign="bottom"><b>sync</b> (Handle &amp;h)</td></tr>
-<tr class="separator:afe885151c876ef387b7bb0d520a2efc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78dc3332dfc49c7f300f1c706ba0868f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78dc3332dfc49c7f300f1c706ba0868f"></a>
+<tr class="separator:a8705e0e979e1516161c2ad84fad4df0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b916cfa2bb5960fc07b690fa85613cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b916cfa2bb5960fc07b690fa85613cd"></a>
 std::vector&lt; std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_unique_parameters</b> ()</td></tr>
-<tr class="separator:a78dc3332dfc49c7f300f1c706ba0868f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f1ae4040139198452e8d33a5976d1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82f1ae4040139198452e8d33a5976d1f"></a>
+<tr class="separator:a5b916cfa2bb5960fc07b690fa85613cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24170e14d9994b17e5894b556205772"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac24170e14d9994b17e5894b556205772"></a>
 VQEEnergiesAndParameters&#160;</td><td class="memItemRight" valign="bottom"><b>get_unique_energies</b> ()</td></tr>
-<tr class="separator:a82f1ae4040139198452e8d33a5976d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac24170e14d9994b17e5894b556205772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a75699b5091ceda6c776d8bbafba4a826"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75699b5091ceda6c776d8bbafba4a826"></a>
-QuantumKernel &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ansatz</b></td></tr>
-<tr class="separator:a75699b5091ceda6c776d8bbafba4a826"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c6aeff8a852806ed72b28c63996ed9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c6aeff8a852806ed72b28c63996ed9f"></a>
+<tr class="memitem:a07fab854066105687ba470a5c4c50072"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07fab854066105687ba470a5c4c50072"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>ansatz_ptr</b></td></tr>
+<tr class="separator:a07fab854066105687ba470a5c4c50072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60de8056314cfb3b5aad1a5a32e79d5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60de8056314cfb3b5aad1a5a32e79d5e"></a>
 Observable &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>observable</b></td></tr>
-<tr class="separator:a4c6aeff8a852806ed72b28c63996ed9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae558c8292844a5deb0e8ca06287b7094"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae558c8292844a5deb0e8ca06287b7094"></a>
+<tr class="separator:a60de8056314cfb3b5aad1a5a32e79d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9806c0890fe9fad6a7f185133ff5861"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9806c0890fe9fad6a7f185133ff5861"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>n_params</b> = 0</td></tr>
-<tr class="separator:ae558c8292844a5deb0e8ca06287b7094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8c2aaa70dbb13ccce0bd767ee78aec0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8c2aaa70dbb13ccce0bd767ee78aec0"></a>
+<tr class="separator:ae9806c0890fe9fad6a7f185133ff5861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96809334eac58889e9a2572d745ec41d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96809334eac58889e9a2572d745ec41d"></a>
 qreg&#160;</td><td class="memItemRight" valign="bottom"><b>q</b></td></tr>
-<tr class="separator:ae8c2aaa70dbb13ccce0bd767ee78aec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19c4d7117e8eff57fa9bd0bda16836fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19c4d7117e8eff57fa9bd0bda16836fe"></a>
+<tr class="separator:a96809334eac58889e9a2572d745ec41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ffa648cfe49133e88fce6f30e379bc7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ffa648cfe49133e88fce6f30e379bc7"></a>
 GradientEvaluator&#160;</td><td class="memItemRight" valign="bottom"><b>grad_eval</b></td></tr>
-<tr class="separator:a19c4d7117e8eff57fa9bd0bda16836fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac68a05c26aee06ea6594e5ad1445c095"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac68a05c26aee06ea6594e5ad1445c095"></a>
+<tr class="separator:a4ffa648cfe49133e88fce6f30e379bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e5d91314a832d6e0d839da1ae85574"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64e5d91314a832d6e0d839da1ae85574"></a>
 std::any&#160;</td><td class="memItemRight" valign="bottom"><b>translation_functor</b></td></tr>
-<tr class="separator:ac68a05c26aee06ea6594e5ad1445c095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a64e5d91314a832d6e0d839da1ae85574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a7f740ed2262f761e7717585ed8fdc3e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f740ed2262f761e7717585ed8fdc3e4"></a>
+<tr class="memitem:ad8eabd42f8373ab5d4682c3e004121d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8eabd42f8373ab5d4682c3e004121d0"></a>
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>OBJECTIVE_NAME</b> = &quot;vqe&quot;</td></tr>
-<tr class="separator:a7f740ed2262f761e7717585ed8fdc3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea412d68098527271bf8fd70188336e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea412d68098527271bf8fd70188336e4"></a>
+<tr class="separator:ad8eabd42f8373ab5d4682c3e004121d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d000323994a96315a270ae143a3454"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7d000323994a96315a270ae143a3454"></a>
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>OPTIMIZER_INIT_PARAMS</b> = &quot;initial-parameters&quot;</td></tr>
-<tr class="separator:aea412d68098527271bf8fd70188336e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19bdab4f7f9dfe2450a641907a89a3c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19bdab4f7f9dfe2450a641907a89a3c2"></a>
+<tr class="separator:ae7d000323994a96315a270ae143a3454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac439a584e9bf2ccf8187f9b483d5669c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac439a584e9bf2ccf8187f9b483d5669c"></a>
 static const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_OPTIMIZER</b> = &quot;nlopt&quot;</td></tr>
-<tr class="separator:a19bdab4f7f9dfe2450a641907a89a3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac439a584e9bf2ccf8187f9b483d5669c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/cades/dev/qcor/lib/hybrid/<a class="el" href="qcor__hybrid_8hpp_source.html">qcor_hybrid.hpp</a></li>
