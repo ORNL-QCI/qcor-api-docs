@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['qaoa',['QAOA',['../classqcor_1_1_q_a_o_a.html',1,'qcor']]],
-  ['qcorbasefunctionpass',['QCORBaseFunctionPass',['../classqcor_1_1_q_c_o_r_base_function_pass.html',1,'qcor']]],
-  ['qrt_5fmapper',['qrt_mapper',['../classqcor_1_1qrt__mapper.html',1,'qcor']]],
-  ['quantumkernel',['QuantumKernel',['../classqcor_1_1_quantum_kernel.html',1,'qcor']]],
-  ['quiltokencollector',['QuilTokenCollector',['../classqcor_1_1_quil_token_collector.html',1,'qcor']]]
+  ['hamopconverter_107',['HamOpConverter',['../structqcor_1_1_qua_si_mo_1_1_iterative_qpe_workflow_1_1_ham_op_converter.html',1,'qcor::QuaSiMo::IterativeQpeWorkflow']]],
+  ['heisenbergmodel_108',['HeisenbergModel',['../structqcor_1_1_qua_si_mo_1_1_model_factory_1_1_heisenberg_model.html',1,'qcor::QuaSiMo::ModelFactory']]]
 ];

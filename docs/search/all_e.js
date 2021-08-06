@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['xacc_5fto_5fllvm_5fir',['XACC_To_LLVM_IR',['../classqcor_1_1_x_a_c_c___to___l_l_v_m___i_r.html',1,'qcor']]],
-  ['xacc_5fto_5fqrt_5fmapper',['xacc_to_qrt_mapper',['../classxacc_1_1internal__compiler_1_1xacc__to__qrt__mapper.html',1,'xacc::internal_compiler']]],
-  ['xaccjit',['XACCJIT',['../classqcor_1_1_x_a_c_c_j_i_t.html',1,'qcor']]],
-  ['xasm_5fsingle_5fvisitor',['xasm_single_visitor',['../classxasm__single__visitor.html',1,'']]],
-  ['xasmtokencollector',['XasmTokenCollector',['../classqcor_1_1_xasm_token_collector.html',1,'qcor']]]
+  ['partialtomoobjfunceval_46',['PartialTomoObjFuncEval',['../classqcor_1_1_qua_si_mo_1_1_partial_tomo_obj_func_eval.html',1,'qcor::QuaSiMo']]],
+  ['passmanager_47',['PassManager',['../classqcor_1_1internal_1_1_pass_manager.html',1,'qcor::internal']]],
+  ['passstat_48',['PassStat',['../structqcor_1_1internal_1_1_pass_stat.html',1,'qcor::internal']]],
+  ['phaseestimationobjfunceval_49',['PhaseEstimationObjFuncEval',['../classqcor_1_1_qua_si_mo_1_1_phase_estimation_obj_func_eval.html',1,'qcor::QuaSiMo']]],
+  ['pyxasm_5fvisitor_50',['pyxasm_visitor',['../classpyxasm__visitor.html',1,'']]],
+  ['pyxasmtokencollector_51',['PyXasmTokenCollector',['../classqcor_1_1_py_xasm_token_collector.html',1,'qcor']]]
 ];

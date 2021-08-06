@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['xacc_5fto_5fllvm_5fir',['XACC_To_LLVM_IR',['../classqcor_1_1_x_a_c_c___to___l_l_v_m___i_r.html',1,'qcor']]],
-  ['xacc_5fto_5fqrt_5fmapper',['xacc_to_qrt_mapper',['../classxacc_1_1internal__compiler_1_1xacc__to__qrt__mapper.html',1,'xacc::internal_compiler']]],
-  ['xaccjit',['XACCJIT',['../classqcor_1_1_x_a_c_c_j_i_t.html',1,'qcor']]],
-  ['xasm_5fsingle_5fvisitor',['xasm_single_visitor',['../classxasm__single__visitor.html',1,'']]],
-  ['xasmtokencollector',['XasmTokenCollector',['../classqcor_1_1_xasm_token_collector.html',1,'qcor']]]
+  ['objectivefunction_125',['ObjectiveFunction',['../classqcor_1_1_objective_function.html',1,'qcor']]],
+  ['objectivefunctionimpl_126',['ObjectiveFunctionImpl',['../classqcor_1_1_objective_function_impl.html',1,'qcor']]],
+  ['operator_127',['Operator',['../classqcor_1_1_operator.html',1,'qcor']]],
+  ['operatorimpl_128',['OperatorImpl',['../classqcor_1_1_operator_1_1_operator_impl.html',1,'qcor::Operator']]],
+  ['optimizer_129',['Optimizer',['../classqcor_1_1_optimizer.html',1,'qcor']]]
 ];

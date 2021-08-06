@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tokencollector',['TokenCollector',['../classqcor_1_1_token_collector.html',1,'qcor']]],
-  ['translationfunctorautogenerator',['TranslationFunctorAutoGenerator',['../structqcor_1_1____internal_____1_1_translation_functor_auto_generator.html',1,'qcor::__internal__']]]
+  ['modelfactory_39',['ModelFactory',['../classqcor_1_1_qua_si_mo_1_1_model_factory.html',1,'qcor::QuaSiMo']]]
 ];

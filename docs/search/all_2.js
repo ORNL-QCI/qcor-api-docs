@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['example_20usage',['Example Usage',['../md__home_cades_dev_qcor_tools_qopt_passes_xacc-ir-transformation_README.html',1,'']]],
-  ['example_20usage',['Example Usage',['../md__home_cades_dev_qcor_tools_qopt_passes_xacc-jit-pass_README.html',1,'']]]
+  ['compositeinstruction_9',['CompositeInstruction',['../classqcor_1_1_composite_instruction.html',1,'qcor']]],
+  ['compositeinstructionimpl_10',['CompositeInstructionImpl',['../classqcor_1_1_composite_instruction_1_1_composite_instruction_impl.html',1,'qcor::CompositeInstruction']]],
+  ['convertdoubleliketovectordouble_11',['ConvertDoubleLikeToVectorDouble',['../classqcor_1_1____internal_____1_1_convert_double_like_to_vector_double.html',1,'qcor::__internal__']]],
+  ['costfunctionevaluator_12',['CostFunctionEvaluator',['../classqcor_1_1_qua_si_mo_1_1_cost_function_evaluator.html',1,'qcor::QuaSiMo']]],
+  ['creg_13',['cReg',['../classxacc_1_1internal__compiler_1_1c_reg.html',1,'xacc::internal_compiler']]]
 ];

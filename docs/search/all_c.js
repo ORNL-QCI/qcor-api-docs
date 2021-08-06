@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unitarytokencollector',['UnitaryTokenCollector',['../classqcor_1_1_unitary_token_collector.html',1,'qcor']]]
+  ['nisq_40',['NISQ',['../classqcor_1_1_n_i_s_q.html',1,'qcor']]]
 ];

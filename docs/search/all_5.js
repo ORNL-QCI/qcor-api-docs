@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['llvm_5fir_5fto_5fxacc',['LLVM_IR_To_XACC',['../classqcor_1_1_l_l_v_m___i_r___to___x_a_c_c.html',1,'qcor']]],
-  ['llvmcompiler',['LLVMCompiler',['../classqcor_1_1_l_l_v_m_compiler.html',1,'qcor']]]
+  ['findfunctionvariablestoreinsts_20',['FindFunctionVariableStoreInsts',['../classqcor_1_1_find_function_variable_store_insts.html',1,'qcor']]],
+  ['ftqc_21',['FTQC',['../classqcor_1_1_f_t_q_c.html',1,'qcor']]]
 ];
